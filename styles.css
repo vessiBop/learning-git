@@ -1,0 +1,114 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR CSS */
+
+.navbarLeft {
+    flex: 30%;
+    font-size: 20px;
+    margin: 10px ;
+
+}
+.navbarRight {
+    flex: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    
+    font-size: 1vh;
+    
+}
+
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: lightblue;
+    opacity: 80%;
+    font-family: 'Source Code Pro', monospace;
+    justify-content: flex-end;   
+}
+
+/* Design of the navbar buttons */
+
+.navbar button {
+    border: none;
+    color: black;
+    background-color: lightblue;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Design of the text on the navbar */
+
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;   
+    position: relative;
+    list-style-type: none;
+    font-size: large;
+    
+}
+
+
+/* Hover effect underneath the navbar links */
+
+.navbar button:hover {
+    color: grey;
+}
+
+.navbar a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: plum;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    background-color: plum;
+}
+
+/* NAVBAR DONE */
+
+/* HOME PAGE */
+
+.homePage {
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    text-align: center;
+}
+
+.left {
+    flex: 30%;
+    padding: 20px;
+    background-color: aliceblue;
+    height: 1000px;
+}
+
+.imgph { 
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.right {
+    flex: 70%;
+    padding: 20px;
+    background-color: white;
+    height: 1000px;
+}
